@@ -1,0 +1,155 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inter:wght@100..900&display=swap');
+
+body
+{
+     overflow-x: hidden;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(210, 46%, 95%);
+    font-family: "Barlow Semi Condensed", sans-serif;
+}
+.upper-section
+{
+    display: flex;
+}
+
+.main
+{
+width:80%;
+height:auto;
+display: grid;
+gap:3%;
+grid-template-columns: repeat(4,1fr);
+ position: relative;
+ bottom: 30%;
+
+
+ 
+
+}
+.box
+{
+    padding:5%;
+    border-radius: 10px;
+}
+.box1
+{
+justify-self: center;
+overflow: hidden;
+grid-column: span 2;
+background-color: hsl(263, 55%, 52%);
+    
+}
+.box2
+{
+    background-color:hsl(217, 19%, 35%);
+}
+
+
+
+.box3
+{
+    background-color: white;
+    grid-row:span 2;
+}
+
+.box5
+{
+    grid-column: span 2;
+}
+.box4
+{
+background-color: white;
+}
+/*************BASIC TEXT-STYLING******************/
+h4  {
+    color:rgba(255, 255, 255, 0.756);
+    }
+h5{
+        color:rgba(255, 255, 255, 0.549);
+    
+    }
+h2
+    {
+        color:rgba(255, 255, 255, 0.855);
+        font-weight: 600;
+    }
+ p
+    {
+        color:rgba(255, 255, 255, 0.486);
+        font-weight:400;
+    }
+
+
+ .box3 h4{
+    color:hsla(217, 30%, 14%, 0.784);
+ }   
+ .box3 h5{
+
+   color: hsla(217, 30%, 14%, 0.463);
+ }
+ .box3 h2
+ {
+    color:hsla(217, 30%, 14%, 0.789);
+ }
+ .box3 p
+ {
+    color: hsla(217, 30%, 14%, 0.63);
+
+ }
+ .box4 h4{
+    color:hsla(217, 30%, 14%, 0.784);
+ }   
+ .box4 h5{
+
+   color: hsla(217, 30%, 14%, 0.463);
+ }
+ .box4 h2
+ {
+    color:hsla(217, 30%, 14%, 0.789);
+ }
+ .box4 p
+ {
+    color: hsla(217, 30%, 14%, 0.63);
+}
+.box5
+{
+    background-color: hsl(219, 29%, 14%);
+}
+
+@media screen and (max-width:1120px) 
+{
+  .main
+{
+    display: grid;
+    width:100%;
+    height:min-content;
+    margin-bottom: 2%;;
+    gap:0; 
+  }
+  .box
+  {
+    grid-column: span 4;
+    padding: 4%;
+    margin:5%;
+    
+}
+.box1
+{
+    height:min-content;
+}
+.box4:nth-child(4)
+{
+     grid-row:3;
+}
+.box5:nth-child(5)
+{
+    grid-row:4;
+}
+}
+
+
+
+
